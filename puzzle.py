@@ -1,6 +1,6 @@
 """ Puzzle module
 Module checks table 9x9
-link
+https://github.com/MartaSamoilenkoPn/Lecture0.git
 """
 
 def validate_board(board : list) -> bool:
@@ -30,6 +30,8 @@ def validate_board(board : list) -> bool:
 ])
     True
     """
+    if len(board) < 9 :
+        return False
     for column_index in range(5):
         number_list = []
         for carry in range(5):
